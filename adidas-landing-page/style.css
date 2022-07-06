@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background: radial-gradient(53.81% 53.81% at 50% 50%, #4B4B4B 0%, #141414 100%);
+    background-size: 1440px 800px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+}
+.logo{
+    margin-left: 140px;
+    justify-content: center;
+}
+header ul{
+    margin-top: 30px;
+    margin-left: 300px;
+    display: flex;
+    list-style-type: none;
+    gap: 70px;
+}
+header ul li{
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .3s;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background-color: #4B4B4B;
+    transition: all 1s ease;
+}
+
+header ul li a:hover:before{
+    width: 100%;
+}
+
+header ul li a:active{
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+main{
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+}
+
+.shoe-style{
+    font-weight: 700;
+    color: #FFFFFF;
+    opacity: 0.25;
+    font-size: 550px;
+    position: absolute;
+}
+
+.shoe img{
+
+    margin-left: 150px;
+    width: 750px;
+    height: auto;
+    filter: drop-shadow(0px 63px 100px rgba(0, 0, 0, 0.55));
+}
+
+.img-360{
+    position: absolute;
+    color: white;
+    margin-top: -200px;
+    margin-left: 150px;
+}
+
+main ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+main ul li a{
+    text-decoration: none;
+}
+
+.nav-style{
+    margin-bottom: 10px;
+    background: #484848;
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.nav-style:hover{
+    background: white;
+}
+
+.show-more{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: -1000px;
+}
